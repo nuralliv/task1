@@ -663,6 +663,9 @@ select:after {
 }
 
 @media screen and (max-width: 440px) {
+   .hero-page h1{
+      font-size: 3rem;
+   }
    .footer-row-one {
       display: flex;
       flex-direction: column;
@@ -720,14 +723,18 @@ select:after {
    .more {
       margin-top: 500px;
    }
+   .more-content{
+      display: flex;
+      gap: 30px;
+   }
+   .more-content .more-text{
+      margin-left: 20px;
+   }
 
    .selectors {
       justify-content: center;
    }
 
-   .posts-page {
-      padding: 50px 20px;
-   }
 
    .footer-lowest {
       justify-content: center;
@@ -747,13 +754,35 @@ select:after {
 
    .posts-page {
       margin-bottom: 220px;
+      height: 280vh;
+      padding: 50px 20px;
+   }
+
+   .posts-page-content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 100px;
+
+   }
+   .posts-page-container{
+      margin-bottom: 20px;
    }
 
    .post-contain {
       width: 100%;
+      
    }
 
-   .posts-page-container {
-      margin-bottom: 40px;
+
+
+}
+
+
+@media screen and (max-width: 390px){
+   .posts-page{
+      height: 290vh ;
    }
 }
+
